@@ -27,3 +27,5 @@ export const TodoStore = writable([
     completed: false,
   },
 ]);
+
+export const showAddForm = writable(false);
