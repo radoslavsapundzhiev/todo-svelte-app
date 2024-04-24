@@ -3,24 +3,24 @@
   import Hero from "./components/Hero.svelte";
   import Menu from "./components/Menu.svelte";
   import TodoList from "./components/TodoList.svelte";
+  import Filter from "./components/Filter.svelte";
 </script>
 
-<Hero/>
+<Hero />
 
 <div class="columns is-flex-direction-column is-fullheight-100vh">
   <main class="column">
     <div class="columns">
-
-      <Menu/>
+      <Menu />
 
       <div class="column is-10 has-text-light">
-        <TodoList/>
+        <Filter />
+        <TodoList />
       </div>
     </div>
   </main>
 
-  <Footer/>
-  
+  <Footer />
 </div>
 
 <style>
