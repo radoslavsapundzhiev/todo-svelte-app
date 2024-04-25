@@ -14,9 +14,7 @@
 
   const handleDelete = (todoId) => {
     if (confirm("Are you sure?")) {
-      TodoStore.update((currentTodo) => {
-        return currentTodo.filter((todo) => todo.id !== todoId);
-      });
+      dispatch("delete", todoId);
     }
   };
 </script>

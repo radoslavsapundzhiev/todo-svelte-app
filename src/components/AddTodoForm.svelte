@@ -1,5 +1,5 @@
 <script>
-  import { TodoStore } from "../stores.js";
+  import { TodoStore, showAddForm } from "../stores.js";
   import { v4 as uuidv4 } from "uuid";
 
   let title = "";
@@ -20,6 +20,10 @@
       color = "#000000";
     }
   };
+
+  function hideAddTodoForm() {
+    showAddForm.set(false);
+  }
 </script>
 
 <form on:submit|preventDefault={handleSubmit} class="form block">
@@ -52,6 +56,9 @@
   <div class="field is-grouped">
     <div class="control">
       <button class="button is-link">Submit</button>
+    </div>
+    <div class="control">
+      <a class="button is-link is-light" on:click={hideAddTodoForm}>Cancel</a>
     </div>
   </div>
 </form>
