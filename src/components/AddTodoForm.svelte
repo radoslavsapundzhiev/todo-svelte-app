@@ -1,24 +1,24 @@
 <script>
-  import { v4 as uuidv4 } from "uuid";
   import { TodoStore, showAddForm } from "../stores.js";
+  import { v4 as uuidv4 } from "uuid";
 
   let title = "";
   let color = "#000000";
 
   const handleSubmit = () => {
     if (title !== "") {
-        const newTodo = {
-            id: uuidv4(),
-            title,
-            color,
-            completed: false,
-        };
-        TodoStore.update((currentTodo) => {
-            return [newTodo, ...currentTodo];
-        });
-        title = "";
-        color = "#000000";
-    }   
+      const newTodo = {
+        id: uuidv4(),
+        title,
+        color,
+        completed: false,
+      };
+      TodoStore.update((currentTodo) => {
+        return [newTodo, ...currentTodo];
+      });
+      title = "";
+      color = "#000000";
+    }
   };
 </script>
 

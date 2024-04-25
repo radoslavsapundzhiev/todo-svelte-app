@@ -1,9 +1,11 @@
 <script>
+  import { showAddForm } from "./stores";
   import Footer from "./components/Footer.svelte";
   import Hero from "./components/Hero.svelte";
   import Menu from "./components/Menu.svelte";
   import TodoList from "./components/TodoList.svelte";
   import Filter from "./components/Filter.svelte";
+  import AddTodoForm from "./components/AddTodoForm.svelte";
 </script>
 
 <Hero />
@@ -14,6 +16,9 @@
       <Menu />
 
       <div class="column is-10 has-text-light">
+        {#if $showAddForm}
+          <AddTodoForm />
+        {/if}
         <Filter />
         <TodoList />
       </div>
