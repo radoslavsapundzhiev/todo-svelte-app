@@ -55,7 +55,7 @@
   </div>
   <div class="field is-grouped">
     <div class="control">
-      <button class="button is-link">Submit</button>
+      <button class="button is-link" disabled={title === ""}>Submit</button>
     </div>
     <div class="control">
       <a class="button is-link is-light" on:click={hideAddTodoForm}>Cancel</a>

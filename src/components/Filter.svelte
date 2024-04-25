@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  export let filter = "";
+  export let filter = "all";
   export let colors = [];
   export let selected = "";
 

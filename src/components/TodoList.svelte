@@ -3,7 +3,7 @@
   import TodoItem from "./TodoItem.svelte";
   import Filter from "./Filter.svelte";
 
-  let filter = "";
+  let filter = "all";
 
   let todos = $TodoStore;
 
