@@ -1,10 +1,9 @@
 <script>
-  import { showAddForm } from "./stores";
+  import { showAddForm, TodoStore } from "./stores";
   import Footer from "./components/Footer.svelte";
   import Hero from "./components/Hero.svelte";
   import Menu from "./components/Menu.svelte";
   import TodoList from "./components/TodoList.svelte";
-  import Filter from "./components/Filter.svelte";
   import AddTodoForm from "./components/AddTodoForm.svelte";
 </script>
 
@@ -19,7 +18,6 @@
         {#if $showAddForm}
           <AddTodoForm />
         {/if}
-        <Filter />
         <TodoList />
       </div>
     </div>

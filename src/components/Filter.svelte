@@ -1,5 +1,5 @@
 <script>
-  let filter = "all";
+  export let filter = "all";
 </script>
 
 <div class="buttons">
