@@ -1,5 +1,5 @@
 <script>
-  import { TodoStore, showAddForm } from "../stores.js";
+  import { TodoStore } from "../stores.js";
   import { v4 as uuidv4 } from "uuid";
 
   let title = "";
